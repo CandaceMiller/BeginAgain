@@ -1,0 +1,249 @@
+/* this is where I styled my font color, along with my meetings modal font to grey */
+.top, 
+.meetingDays, 
+#date,
+.name,
+.yourReview,
+.intro,
+.helpUs,
+.sponser-info,
+.other-resources,
+.menuBtn,
+.signUpBtn,
+.submitBtn,
+.email, 
+.password,
+label,
+.name,
+.intro,
+.about,
+.yourReview,
+.opinionsPlease,
+.anchor,
+.city,
+.days,
+.phone,
+.visitAgain, 
+.resources,
+#phoneLogo,
+.title,
+table th,
+td,
+.weekBtn,
+.formInput,
+.goBtn,
+.location:hover {   
+    color: grey !important;
+}
+/* this is where I changed various backgrounds to aquamarine */
+.top, 
+.meetingDays, 
+#date,
+.name,
+.yourReview,
+.intro,
+.helpUs,
+.sponser-info,
+.other-resources,
+.menuBtn,
+.about,
+body,
+.signUpBtn,
+.submitBtn,
+.weekBtn,
+.goBtn,
+.rehabInfo,
+.rehabSection,
+.rehabInfo,
+.rehabSection {
+    background-color: aquamarine;
+}
+/* this is where i put a shadow on my page name on my main page */
+.siteName {
+    text-shadow: -.04em -.04em rgb(212, 209, 209);
+}
+/* this is where I put a border on the bottom of my top nav on all pages */
+.top {
+    border-bottom: 3px solid grey;
+}
+/* this is where I set font to cursive on all 3 pages for site name and certain paragraphs on main and feedback pages */
+h1,
+h4,
+.aboutUs,
+.weHope,
+.freeNumbers,
+.websites {
+    font-family: cursive; 
+}
+/* this is where I placed my anchor logo on my all pages */
+.anchorDiv {
+    display: flex;
+}
+/* this is where I put a solid grey border around my buttons, modal & inputs */
+.menuBtn,
+.mainBtns a,
+.signUpBtn,
+.submitBtn,
+.emailInput,
+.userName,
+.userEmail,
+.nameInput,
+textarea,
+.weekBtn,
+td,
+.goBtn,
+.join {    
+    border: 2px solid grey !important; 
+}
+/* this is where I rounded my borders on my buttons and inputs */
+.mainBtns a,
+.signUpBtn,
+.submitBtn,
+.emailInput,
+.userName,
+.userEmail,
+.nameInput,
+textarea,
+.weekBtn,
+.goBtn {
+    border-radius: 10px;
+}
+/* this is where I put a margin on the top of my main buttons on all 3 pages */
+.mainBtns {
+    margin-top: 5px;
+}
+/* this changes the styles on my buttons when you hover over them on all 3 pages */
+.mainBtns a:hover,
+.submitBtn:hover,
+.signUpBtn:hover,
+.goBtn:hover {    
+    text-align: center;
+}
+/* this changes the background on my buttons, cards, headings of meeting, sponsers, more resources and contact info on all 3 pages */
+.mainBtns a:hover,
+.submitBtn:hover,
+.signUpBtn:hover,
+.weekBtn:hover,
+.goBtn:hover,
+.rehabs,
+.meet,
+.card,
+.sponsers,
+.moreResources,
+.contactInfo {
+    background-color: grey; 
+}
+/* this puts a width on my home button on my feedback and signup pages & my input for my meetings modal on my homepage */
+.navBtnLi,
+.formInput {
+    width: 90px;
+}
+/* this is placing a margin on the top of the about section on my homepage */
+.about {
+    margin-top: 50px;
+}
+/* this is hidding my overflow on all pages */
+body {
+    overflow-x: hidden;
+}
+/* this changes the font size on my buttons & inputs when you hover over it */
+.signUpBtn:hover,
+#myModal,
+.formInput,
+.goBtn:hover,
+.location:hover {      
+    font-size: 20px;
+}
+/* this changes my width and height on my sign up & week buttons when you hover over them on my sign up & homepages */
+.signUpBtn:hover,
+.weekBtn:hover {
+    width: 110px;
+    height: 50px;
+}
+/* this added an underline on main text on all pages */
+.intro,
+.yourReview,
+.aboutUs,
+.weHope,
+.contactUs,
+.feedback,
+.backToTop,
+.freeNumbers,
+.websites,
+.availability {
+    text-decoration-line: underline;
+}
+/* this is putting a border color and margin on my bottom of my week button on my homepage */
+.weekBtn {
+    border-color: grey;
+    margin-bottom: 45px;
+}
+/* this is changing my font color to aquamarine when hovering over buttons & the font color on my meeting, sponsers, rehabs, more resources & contact info on all pages */
+.weekBtn:hover,
+.signUpBtn:hover,
+.goBtn:hover,
+.card:hover,
+.rehabs,
+.meet,
+.rehabInfo,
+.rehabSection,
+.mainBtns a:hover,
+.submitBtn:hover,
+.sponsers,
+.moreResources,
+#facebookLogo,  
+#twitterLogo, 
+#linkedInLogo, 
+#instagramLogo, 
+.backToTop,
+.directions,
+#anchorLogo,
+.contactUs,
+.copyright,
+.feedback,
+.homePage,
+.backToHome,
+.signUp,
+.phoneNumber {    
+    color: aquamarine !important;
+}
+/* this is putting a height & width on my go button as well as a margin on top and no padding on my go button on my homepage */
+.goBtn {
+    height: 36px;
+    width: 30px;
+    margin-top: 20px;
+    padding: 0;
+}
+/* this is where I put a height and width on my pics of rehabs on my home page */
+.rehabPic1, 
+.rehabPic2, 
+.rehabPic3, 
+.rehabPic4 {
+    height: 148px;
+    width: 200px;
+}
+.card {
+    border: 5px solid aquamarine;     
+}
+/* this is making only one card at a time expand to a height of 100 px */
+.location {
+    height: 100px; 
+}
+/* this is putting a border on my cards for rehabs when you hover over them on my homepage */
+.location:hover {
+    border: 5px solid grey;
+}
+/* this is my footer section styling on all pages */
+.contactInfo {
+    background-position: unset;
+    box-sizing: content-box;  
+}
+/* this is making sure there's no bullet points on my list items */
+.contactInfo ul {
+       list-style: none;
+        margin: 0px !important;
+}
+/* this is where i put a height on my pic on my sign up page */
+.join {
+    height: 375px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEGIN AGAIN Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.tlm.cloud/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../CSS/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- below is making my nav stay on top of screen no matter where user is and containing it to full width of screen -->
+    <header class="top sticky-top container-fluid">
+        <!-- below this is navbar bootstrap class component -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="anchorDiv mt-2"><!-- adding margin top -->
+                <span class="anchor nav-item nav-link fa-stack mt-2">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i id="anchorLogo" class="fa fa-stack-1x">&#xf13d;</i>
+                </span>
+                <h1 class="siteName">BEGIN AGAIN</h1>
+            </div>
+            <div>
+                <h2 class="city navbar-brand ml-3">Ft. Wayne, Indiana</h2><!-- adding margin left -->
+                <span id="date"></span><!-- date method -->
+            </div>
+            <!-- below automatic margin left -->
+            <div class="mainBtns ml-auto" id="navbarToggler">
+                <ul class="navbar-nav list-inline text-center ml-auto">
+                    <li><a class="nav-link navBtnLi" href="../index.html">Home</a></li><!-- home button -->
+                    <li><a class="nav-link navBtnLi" href="../HTML/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="text-center">
+        <!-- below this is where my intro is it's centered, the jumbotron makes this section bigger and more spaced out, centering everything & flexing it -->
+        <h2 class="intro jumbotron d-flex justify-content-center align-items-center">
+            Let's stay connected !
+        </h2><!-- Bootstrap class component (jumbotron) -->
+        <!-- below this is where my intro is it's centered, the jumbotron makes this section bigger and more spaced out, centering everything & flexing it -->
+        <h4 class="about jumbotron d-flex justify-content-center align-items-center">
+            Gettin out or starting over in any way is scary and we have resources to help !<br>
+            By signing up here we'll be able to keep you updated on all changes in the<br>
+            community and all resources you can need ! Let us help you !</h4>
+    </section>
+    <!-- below is where you put your full name and email to sign up for updates -->
+    <!-- this is also a bootsrap responsive grid layout -->
+    <section id="formSection">
+        <!-- below is putting content in row instead of on top of each other -->
+        <div class="row">
+            <div class="imageJoin col-sm d-flex justify-content-center align-items-center">
+                <img class="join rounded mb-5" src="../images/joinUs.jpeg" alt="JoinUsPic">
+            </div><!-- above is putting my pic in my 1st column, flexing and centering content -->
+            <!-- below is putting my sign up forms in my 2nd column, flexing and centering content -->
+            <div class="signUp col-sm d-flex justify-content-center align-items-center">
+                <!-- below is making it to where user has to type something to sign up & making text lighter -->
+                <form class="signUpForm text-center" id="needs-validation">
+                    <div class="name form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="nameInput form-control text-muted" required>
+                    </div>
+                    <div class="email form-group">
+                        <label>Email address</label>
+                        <input type="text" class="emailInput form-control text-muted" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn signUpBtn mb-5">Sign Up</button><!-- adding margin to bottom -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+   <!-- footer section -->
+   <footer class="contactInfo">
+        <nav class="navFooter text-center">
+            <div>
+                <small class="copyright"><strong><u>BEGIN AGAIN</u></strong> &copy; 2021 Candace Miller</small><br>
+            </div>
+                    <!-- below these are all deadlinks below but will eventually lead to social media sites for this page -->
+                    <ul class="d-flex justify-content-center text-center">                       
+                        <li>
+                            <span class="facebook nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="facebookLogo"
+                                        class="fab fa-stack-1x">&#xf09a;</i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="twitter nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="twitterLogo"
+                                        class="fab fa-stack-1x">&#xf099;</i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="linkedIn nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="linkedInLogo"
+                                        class="fab fa-stack-1x">&#xf08c;</i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="instagram nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="instagramLogo"
+                                        class="fab fa-stack-1x">&#xf16d;</i></a>
+                            </span>
+                        </li>
+                    </ul>
+        </nav>
+    </footer>
+    <!-- below this is where I connect to jQuery, bootstrap & fontawesome libraries -->
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/fontawesome/5.15.2/js/all.js"
+        integrity="sha384-VywJezmXsqaMEF0ZwPKBK6USLAWglqLUwxmqJYtfcHaxhPthFg8CgRboJy6Qxbw0"
+        crossorigin="anonymous"></script>
+    <script src="../javaScript/main.js"></script>
+</body>
+
+</html>

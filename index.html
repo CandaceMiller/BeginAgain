@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Begin Again Fort Wayne, IN</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="CSS/main.css">   
+</head>
+
+<body>
+    <!-- nav bar this is a bootstrap navbar component it's making my navbar always stay at top of viewing no matter where you are on the page -->
+    <header class="top sticky-top container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light row">
+            <div class="anchorDiv mt-2 col-sm">
+                <span class="anchor nav-item nav-link fa-stack mt-2">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i id="anchorLogo" class="fa fa-stack-1x">&#xf13d;</i>
+                </span>
+                <h1 class="siteName">BEGIN AGAIN</h1>
+            </div>
+            <div class="col-sm">
+                <h2 class="city navbar-brand">Ft. Wayne, Indiana</h2><!-- city this is for -->
+                <span id="date" class="mr-2"></span><!-- date method -->
+            </div>
+            <!-- collapsable menu button (this is bootstrap collapse class scomponent) it only shows the menu button when the page gets smaller -->
+            <button class="menuBtn navbar-toggler col-sm" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">Menu
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- these are my main buttons at the top of my page to navigate user to different sections of my page or to the sign up or feedback pages -->
+            <div class="mainBtns collapse navbar-collapse col-sm" id="navbarToggler">
+                <ul class="navbar-nav list-inline text-center mx-auto">
+                    <li><a class="nav-link navBtnLi" href="#meetings">Meetings</a></li>
+                    <li><a class="nav-link navBtnLi" href="#rehabs">Rehabs</a></li>
+                    <li><a class="nav-link navBtnLi text-center"
+                            href="../candace-miller-capstone/HTML/feedback.html">Feedback</a></li>
+                    <li><a class="nav-link navBtnLi text-center" href="../candace-miller-capstone/HTML/signUp.html">Sign
+                            Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- about section -->
+    <section class="about text-center mb-5 container-fluid">
+        <h2 class="aboutUs">Here's a little about what we do :</h2>
+        <div class="row">
+            <!-- this is putting everything in rows so everything is beside instead of on top of each other -->
+            <blockquote
+                class="quote1 blockquote d-flex justify-content-center align-items-center col-sm">
+                Addiction often feels lonely, but it doesn't have to be.
+                There are organizations in every community that
+                want to connect you with the resources you need.
+                We are here to point you in the right direction.
+            </blockquote>
+            <!-- this puts the quote in the middle of the first row of this section & contains it to the full length of the screen-->
+            <div
+                class="col-sm mb-5 mt-5 d-flex justify-content-center align-items-center d-block mx-auto">
+                <img src="images/stressLess.jpeg" class="stressed rounded img-fluid">
+            </div>
+            <!-- this puts the pic in the middle of the second row of this section & adds a margin on top and bottom -->
+            <blockquote
+                class="quote2 blockquote d-flex justify-content-center align-items-center col-sm mb-5">
+                Most community organizations advocate for drug
+                and alcohol prevention, while focusing on helping
+                people in recovery maintain sobriety and
+                confidentiality. Let us get you started!
+            </blockquote><!-- this puts the quote in the middle of the third row of this section -->
+        </div>
+        <h2 class="weHope">We hope you find what you need !</h2>
+    </section>
+
+    <!-- meeting days section (days, times, location)  everything is centered & the display makes it larger & it has a margin on top -->
+    <section class="meetingDays text-center display-3 mb-5" id="meetings">
+        <div class="meet">Meetings</div>
+        <div class="row mt-5 container-fluid">
+            <!-- this is putting everything in rows so everything is beside instead of on top of each other & a margin on top -->
+            <blockquote
+                class="quote3 blockquote d-flex justify-content-center align-items-center col-sm mt-5 mb-5">
+                Almost every community in the United States
+                hosts Alcoholics Anonymous, Narcotics Anonymous
+                and other types of support meetings.
+            </blockquote><!-- this puts the quote in the middle of the first row of this section -->
+            <div id="carouselFade" class="carousel slide carousel-fade col mb-5" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="join rounded mx-auto" src="images/meeting1.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="join rounded mx-auto" src="images/meeting2.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="join rounded mx-auto" src="images/meeting3.jpeg" alt="Third slide">
+                    </div><!-- this puts the carousel in the middle of the second row of this section -->
+                </div>
+            </div>
+            <blockquote
+                class="quote4 blockquote d-flex justify-content-center align-items-center col-sm mt-5 mb-5">
+                Many require you to begin a 12 Step Program,
+                but several support groups adhere to other
+                recovery models. Find the right support group for you.
+            </blockquote><!-- this puts the quote in the middle of the third row of this section -->
+        </div>
+        <section>
+            <h1 class="availability">Available Meetings:</h1>
+        </section>
+        <!-- this is my modal content is being centered this is where all meetings will display after being pulled from my javaScript page -->
+        <div class="days d-sm-flex text-center justify-content-center">
+            <div class="modal fade" role="dialog" id="myModal" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <table>
+                            <tr>
+                                <th>Meeting Name</th>
+                                <th>Address</th>
+                                <th>Directions</th>
+                                <!-- This (above-directions) is a dead link but when I get out I'd like to connect this to google maps -->
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- these below are all my day buttons where users pick which day they are looking for a meeting on -->
+            <div class="monday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="monday" value="monday">
+                    Monday
+                </button><!-- this is a bootstrap button class component -->
+            </div>
+            <div class="tuesday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="tuesday" value="tuesday">
+                    Tuesday
+                </button>
+            </div>
+            <div class="wednesday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="wednesday" value="wednesday">
+                    Wednesday
+                </button>
+            </div>
+            <div class="thursday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="thursday" value="thursday">
+                    Thursday
+                </button>
+            </div>
+            <div class="friday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="friday" value="friday">
+                    Friday
+                </button>
+            </div>
+            <div class="saturday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="saturday" value="saturday">
+                    Saturday
+                </button>
+            </div>
+            <div class="sunday-btn mt-4">
+                <button type="button" class="weekBtn btn btn-md" id="sunday" value="sunday">
+                    Sunday
+                </button>
+            </div>
+            <form>
+                <select class="formInput"></select>
+            </form><!-- Bootstrap form class component -->
+            <div>
+                <button class="goBtn btn" data-toggle="modal" data-target="#myModal">Go</button>
+            </div>
+        </div>
+    </section>
+    <!-- below rehabs info section -->
+    <section class="rehabSection">
+        <!-- below is centering my text and making it bigger -->
+        <div class="rehabs text-center display-3" id="rehabs">Rehabs</div>
+        <div class="container-fluid text-center">
+            <div class="d-flex justify-content-center mt-5">
+                <!-- this is putting everything in the center & putting a margin on top and flexing content -->
+                <div class="row">
+                    <!-- this is putting content in rows instead of on top of each other -->
+                    <div class="col-sm-4 col-md-3 mb-3">
+                        <!-- this is putting my 1st pic in my 1st row -->
+                        <img src="images/rehab1.jpeg" class="rehabPic1 rounded img-fluid" alt="rehabPic1">
+                    </div>
+                    <div class="col-sm-4 col-md-3 mb-3">
+                        <!-- this is putting my 2nd pic in my 2nd row -->
+                        <img src="images/rehabRoom.jpeg" class="rehabPic2 rounded img-fluid" alt="rehabPic2">
+                    </div>
+                    <div class="col-sm-4 col-md-3 mb-3">
+                        <!-- this is putting my 3rd pic in my 3rd row -->
+                        <img src="images/rehab2.jpeg" class="rehabPic3 rounded img-fluid" alt="rehabPic3">
+                    </div>
+                    <div class="col-sm-4 col-md-3 mb-3">
+                        <!-- this is putting my 4th pic in my 4th row -->
+                        <img src="images/rehabRoom2.jpeg" class="rehabPic4 rounded img-fluid" alt="rehabPic4">
+                    </div>
+                </div>
+            </div>
+            <!-- All phone number links are dead (in this section below) but will eventually lead to thier actual phone numbers and the others will eventually link to Google Maps -->
+            <div class="rehabInfo d-flex justify-content-center text-center mt-5">
+                <!-- this is flexing my content, centering it and putting a margin on top -->
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hope & Harriet House</h5>
+                        <p class="card-text">5920 Decatur Rd.<br>Fort Wayne, IN. 46816</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-424-4908</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hope Alive</h5>
+                        <p class="card-text">1747 North Wells St.<br>Fort Wayne, IN. 46808</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-420-6100</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">The Rose Home</h5>
+                        <p class="card-text">2208 Wayne Trace<br>Fort Wayne, IN. 46803</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-424-1600</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Genesis Outreach</h5>
+                        <p class="card-text">2605 Gay St.<br>Fort Wayne, IN. 46806</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-744-2800</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="rehabInfo d-flex justify-content-center text-center">
+                <!-- this is flexing my content, centering it -->
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Premier Palace</h5>
+                        <p class="card-text">317 E. Willams St.<br>Fort Wayne, IN. 46803</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-745-3037</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Charis House</h5>
+                        <p class="card-text">431 Fairmount Place<br>Fort Wayne, IN. 46808</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-426-8123</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Redemption House</h5>
+                        <p class="card-text">2720 Fairfield Ave.<br>Fort Wayne, IN. 46807</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-449-9091</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">The Rescue Mission</h5>
+                        <p class="card-text">404 E. Washington Blvd.<br>Fort Wayne, IN. 46807</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-426-7357</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="rehabInfo d-flex justify-content-center text-center">
+                <!-- this is flexing my content, centering it -->
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Oxford House(Monet)</h5>
+                        <p class="card-text">6236 Monarch Dr.<br>Fort Wayne, IN. 46815</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">574-276-1247</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Oxford House(Blue Beech)</h5>
+                        <p class="card-text">7116 Blue Beech Dr.<br>Fort Wayne, IN. 46815</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-387-6272</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Oxford House(Galileo)</h5>
+                        <p class="card-text">3526 Summersworth Run<br>Fort Wayne, IN. 46804</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">574-276-1247</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Oxford House(Great Bear)</h5>
+                        <p class="card-text">7132 Great Bear Ct.<br>Fort Wayne, IN. 46815</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-245-0055</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="rehabInfo d-flex justify-content-center text-center mb-5">
+                <!-- this is flexing my content, centering it and putting a margin on bottom -->
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Vincent Village</h5>
+                        <p class="card-text">2827 Holton Ave.<br>Fort Wayne, IN. 46806</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">574-456-4172</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Victory House for Women</h5>
+                        <p class="card-text">518 E. Jefferson Blvd.<br>Fort Wayne, IN. 46802</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-557-6183</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">The Thirteenth Step House INC</h5>
+                        <p class="card-text">1317 West Washington Blvd.<br>Fort Wayne, IN. 46802</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-424-2341</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+                <div class="card location" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Freedom House INC</h5>
+                        <p class="card-text">806 Walnut St.<br>Fort Wayne, IN. 46802</p>
+                        <p class="card-text"><a class="phoneNumber" href="contactUs">260-456-8097</a></p>
+                        <p class="card-text"><a class="directions" href="#">Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sponser info section -->
+    <section class="sponser-info">
+        <!--below this is centering my text and making it bigger -->
+        <div class="sponsers text-center display-3" id="sponsers">Sponsers</div>
+        <div class="row text-center container-fluid">
+            <!-- this is putting everything in rows so everything is beside instead of on top of each other & centering my text -->
+            <blockquote
+                class="quote5 blockquote d-flex justify-content-center align-items-center col-sm">
+                Sobriety is easier with help. Healthy relationships
+                with friends and family are vital to recovering and
+                maintaining long-term sobriety. Social support
+                plays a critical role in our sobriety!
+            </blockquote>
+            <!-- this puts the quote in the middle of the 1st row of this section it also id flexing my content and centering it-->
+            <div class="carousel slide text-center mt-5 mb-5 col-sm" data-ride="carousel">
+                <!-- this puts the carousel in the middle of the 2nd row of this section & putting a margin on bottom and top -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="rounded img-fluid" src="images/sponser.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded img-fluid" src="images/sponser2.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded img-fluid" src="images/sponser3.jpeg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded img-fluid" src="images/sponsers4.jpeg" alt="Forth slide">
+                    </div>
+                </div>
+            </div>
+            <blockquote
+                class="quote6 blockquote d-flex justify-content-center align-items-center col-sm">
+
+                You shouldn't hide in isolation because recovery is hard.
+                Relationships with a sponser will help you through
+                very stressful situations because they truly
+                understand what you're going through.
+            </blockquote>
+            <!-- this puts the quote in the middle of the 3rd row of this section & flexing content, centering it & putting a margin on top & contains it the whole length of the screen -->
+        </div>
+    </section>
+    <!-- bootstrap grid used -->
+    <section class="other-resources">
+        <!-- below this is centering text & making it bigger -->
+        <div class="moreResources text-center display-3" id="moreResources">More Resources</div>
+        <div class="container-fluid text-center mt-5 mb-5">
+            <!-- above this is centering text as well as adding a margin on top and bottom & contains it the whole length of the screen -->
+            <h2 class="websites">Websites:</h2><br>
+            <div class="row">
+                <!-- above this puts everything in rows instead of on top of each other -->
+                <!-- All links to these websites are dead (in this section below) but will eventually be active they're dead to show what I intend for them to do -->
+                <div
+                    class="col-sm col-md col-lg d-sm-flex d-md-flex d-lg-flex justify-content-center align-items-center">
+                    <!-- above this is flexing & centering everything in the 1st row & fitting it on all screen sizes -->
+                    <div class="ml-4 mb-2">                        
+                        <a href="#" class="resources">Alcoholics Anonymous</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">                       
+                        <a href="#" class="resources">Narcotics Anonymous</a>
+                    </div> <!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">                        
+                        <a href="#" class="resources BackToTheBasics">Back To The
+                            Basics</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">                        
+                        <a href="#" class="resources">Al-Anon</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">                        
+                        <a href="#" class="resources">Setting Goals the SMART Way</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">                        
+                        <a href="#" class="resources">Broken Princesses</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                </div>
+            </div>
+        </div>
+        <!-- below is putting a margin on top of these numbers, centering them and making sure they expand with the screen size and stay inside of the entire container -->
+        <div class="container-fluid text-center mt-5">
+            <div class="row">
+                <!-- above this puts everything in rows instead of on top of each other -->
+                <div
+                    class="col-sm col-md col-lg d-sm-flex d-md-flex d-lg-flex justify-content-center align-items-center">
+                    <!-- above this is flexing & centering everything in the 2nd row & fitting it on all screen sizes -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">American Society of Addictive Medicine</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">General & Alcohol Specific Social
+                            Support</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Relapse Prevention Basics</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Smart Recovery</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Managing Stress: Alcohol & Other Drugs</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center mt-5">
+            <!-- above is putting a margin on top of these numbers, centering them and making sure they expand with the screen size and stay inside of the entire container -->
+            <div class="row">
+                <!-- above this puts everything in rows instead of on top of each other -->
+                <div
+                    class="col-sm col-md col-lg d-sm-flex d-md-flex d-lg-flex justify-content-center align-items-center">
+                    <!-- above this is flexing & centering everything in the 3rd row & fitting it on all screen sizes -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Treatment & Recovery</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Recovery for Family Members</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Mayo Clinic</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">DrugRehabs</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                    <div class="ml-4 mb-2">
+                        <a href="#" class="resources">Alcohol Cravings Questionnaire</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this website -->
+                </div>
+            </div>
+        </div><br>
+        <h2 class="freeNumbers text-center">Toll Free Numbers:</h2><!-- this is centering text -->
+        <!-- below is putting a margin on top of these numbers, centering them and making sure they expand with the screen size and stay inside of the entire container -->
+        <div class="helpNumbers container-fluid text-center mt-5">
+            <div class="row mt-5">
+                <!--above this puts everything in rows instead of on top of each other & adding a morgin on top -->
+                <div class="col-sm d-sm-flex justify-content-center align-items-center">
+                    <div class="ml-4 mb-2">Substance Abuse Helpline<br>
+                        <a class="phoneNumber" href="#">1-800-662-4357</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this number -->
+                    <div class="ml-4 mb-2">Drug Free Workplace Helpline<br>
+                        <a class="phoneNumber" href="#">1-800-967-5752</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this number -->
+                    <div class="ml-4 mb-2">Partners for Drug-Free Kids Helpline<br>
+                        <a class="phoneNumber" href="#">1-855-378-4373</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this number -->
+                    <div class="ml-4 mb-2">Hope Helpline<br>
+                        <a class="phoneNumber" href="#">1-800-622-2255</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this number -->
+                    <div class="ml-4 mb-2">Addiction Treatment Help<br>
+                        <a class="phoneNumber" href="#">1-800-334-8893</a>
+                    </div><!-- above this is putting a margin on the left & bottom of this number -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="contactInfo">
+        <!-- below is centering text -->
+        <nav class="navFooter text-center">
+            <div>
+                <small class="copyright"><strong><u>BEGIN AGAIN</u></strong> &copy; 2021 Candace Miller</small><br>
+            </div>
+            <!-- below puts everything in a row instead of stacking on top of each other, centers it & contains it to full length of screen -->
+            <div class="row container-fluid text-center">
+                <!-- These are all dead links (below) but eventually will connect once this is an active site -->
+                <a href="#" class="contactUs col-sm col-md col-lg">Email Us</a></li><!-- this is putting content in the 1st row -->
+                <ul class="navUl d-flex col-sm col-md col-lg justify-content-center text-center"><!-- this is putting content in the 2nd row, centering it & flexing -->
+                    <span class="facebook nav-item nav-link fa-stack">
+                        <a href="#" class="contactUs"><i id="facebookLogo" class="fab fa-stack-1x">&#xf09a;</i></a>
+                    </span>
+                    </li>
+                    <li>
+                        <span class="twitter nav-item nav-link fa-stack">
+                            <a href="#" class="contactUs"><i id="twitterLogo" class="fab fa-stack-1x">&#xf099;</i></a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="linkedIn nav-item nav-link fa-stack">
+                            <a href="#" class="contactUs"><i id="linkedInLogo" class="fab fa-stack-1x">&#xf08c;</i></a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="instagram nav-item nav-link fa-stack">
+                            <a href="#" class="contactUs"><i id="instagramLogo" class="fab fa-stack-1x">&#xf16d;</i></a>
+                        </span>
+                    </li>
+                </ul>
+                <a class="backToTop col-sm col-md col-lg" href="#top">Back To Top</a><!-- this is putting content in the 3rd row -->
+            </div>
+        </nav>
+    </footer>
+    <!-- this is where I connect to jQuery, bootstrap & fontawesome libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha384-VywJezmXsqaMEF0ZwPKBK6USLAWglqLUwxmqJYtfcHaxhPthFg8CgRboJy6Qxbw0"
+        crossorigin="anonymous"></script>
+    <script src="javaScript/main.js"></script><!-- this is connecting to my main javaScript -->
+    <script src="javaScript/meetings.js"></script><!-- this is connecting to my meetings javaScript -->
+</body>
+
+</html>

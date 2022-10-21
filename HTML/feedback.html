@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEGIN AGAIN Feedback</title>
+    <link rel="stylesheet" href="https://cdn.tlm.cloud/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../CSS/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- below is a bootstrap navbar & sticky top that keeps the navbar at the top of the screen no matter where you are on the page -->
+    <header class="top sticky-top container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- below is adding a margin on the top -->
+            <div class="anchorDiv mt-2">
+                <span class="anchor nav-item nav-link fa-stack mt-2">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i id="anchorLogo" class="fa fa-stack-1x">&#xf13d;</i>
+                </span>
+                <h1 class="siteName">BEGIN AGAIN</h1>
+            </div>
+            <div>
+                <h2 class="city navbar-brand ml-3">Ft. Wayne, Indiana</h2><!-- is adding a margin on the left -->
+                <span id="date"></span><!-- date method -->
+            </div>
+            <!-- below this is bootstrap margin auto -->
+            <div class="mainBtns ml-auto" id="navbarToggler">
+                <ul class="navbar-nav list-inline text-center ml-auto">
+                    <li><a class="nav-link navBtnLi" href="../index.html">Home</a></li>                            
+                    <li><a class="nav-link navBtnLi" href="../HTML/signUp.html">Sign Up</a></li>
+                </ul><!-- this is my home button -->
+            </div>
+        </nav>
+    </header>
+    <section>
+        <!-- below this is making my section bigger, flexing it & centering it -->
+        <h2 class="yourReview jumbotron d-flex justify-content-center align-items-center text-center">Your
+            Review:
+        </h2>
+        <!-- below this is where our viewer opinions are going to be inputted (name, email, how they heard about us, whether they would visit again, gender and their personal feedback  -->
+        <h4 class="opinionsPlease mt-3 text-center d-flex justify-content-center align-items-center">
+            Your opinions are very important to us and we look forward to<br>
+            hearing from you as well as making any changes neccessary<br>
+            to better help our viewers!</h4><!-- above is flexing, centering & andding a margin on top -->
+            <!-- below is flexing, centering & andding a margin on top -->
+        <form class="feedbackForm d-flex justify-content-center align-items-center mt-5">
+            <!-- below is centering text -->
+            <div class="text-center">
+                <!-- below is adding a margin on bottom -->
+                <div class="mb-3">
+                    <label>Full Name</label><br />
+                    <input type="text" class="nameInput text-muted" required><!-- this makes it where the user has to put something to go to the next input & makes the text lighter -->
+                </div>
+                <!-- below is adding a margin on bottom -->
+                <div class="email mb-4">
+                    <label>Email address</label><br />
+                    <input type="text" class="emailInput text-muted" required><!-- this makes it where the user has to put something to go to the next input & makes the text lighter -->
+                </div>
+                <!-- below is adding a margin on bottom -->
+                <div class="radio-buttons mb-3">
+                    <label class="title">Gender</label><br>
+                    <input type="radio" class="mt-2" id="male" value="M" />
+                    <label for="male">M</label>
+                    <input type="radio" id="female" value="F" />
+                    <label for="female">F</label>
+                </div>
+                <!-- below is adding a margin on bottom -->
+                <p class="mb-5">
+                    <label for="hear-about">
+                        How did you hear about us?
+                    </label>
+                    <br />
+                    <!-- below is where user tells us how they heard about us -->
+                    <select name="referred" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="release-coordinater">Release Coordinater</option>
+                        <option value="probationOfficer">Probation Officer</option>
+                        <option value="counselor">Counselor</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <!-- below is adding a margin on bottom -->
+                <p class="visitAgain mb-5">
+                    Would you visit again?
+                    <br />
+                    <!-- below is adding a margin on top -->
+                    <label class="mt-2">
+                        <input type="radio" name="rating" value="yes" />
+                        Yes
+                    </label>
+                    <br />
+                    <!-- below is adding a margin on top -->
+                    <label class="mt-2">
+                        <input type="radio" name="rating" value="no" />
+                        No
+                    </label>
+                    <br />
+                    <!-- below is adding a margin on top -->
+                    <label class="mt-2">
+                        <input type="radio" name="rating" value="maybe" />
+                        Maybe
+                    </label>
+                </p>
+                <!-- below is adding a margin on top -->
+                <h4 class="helpUs mt-5">
+                    Please let us know if you have something you would<br>
+                    like to see us add or anything you think we should<br>
+                    take out. If there's a county you would like for us<br>
+                    to post meetings, sponsers, halfway houses or other<br>
+                    resources for let us know.
+                </h4>
+                <!-- below is adding a margin on top -->
+                <p>
+                    <label class="mt-5" for="comments">
+                        Feedback:
+                    </label>
+                    <br />
+                    <textarea cols="30" id="comments"></textarea>
+                </p>
+                <input class="submitBtn" type="submit" value="Submit review" required /><!-- this makes it where the user has to put something to go to the next input -->
+                <!-- below is adding a margin on top & bottom -->
+                <h4 class="helpUs mt-5 mb-5">
+                    Thank you so much for your feedback!<br>
+                    We appreciate you!
+                </h4>
+            </div>
+            </div>
+        </form>
+    </section>
+    <!-- footer section -->
+    <footer class="contactInfo">
+        <nav class="navFooter text-center">
+            <div>
+                <small class="copyright"><strong><u>BEGIN AGAIN</u></strong> &copy; 2021 Candace Miller</small><br>
+            </div>
+                    <!-- below these are all deadlinks below but will eventually lead to social media sites for this page -->
+                    <ul class="d-flex justify-content-center text-center">                       
+                        <li>
+                            <span class="facebook nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="facebookLogo"
+                                        class="fab fa-stack-1x">&#xf09a;</i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="twitter nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="twitterLogo"
+                                        class="fab fa-stack-1x">&#xf099;</i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="linkedIn nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="linkedInLogo"
+                                        class="fab fa-stack-1x">&#xf08c;</i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="instagram nav-item nav-link fa-stack">
+                                <a href="#" class="contactUs"><i id="instagramLogo"
+                                        class="fab fa-stack-1x">&#xf16d;</i></a>
+                            </span>
+                        </li>
+                    </ul>
+        </nav>
+    </footer>
+    <!-- below this is where I connect to jQuery, bootstrap & fontawesome libraries -->
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/fontawesome/5.15.2/js/all.js"
+        integrity="sha384-VywJezmXsqaMEF0ZwPKBK6USLAWglqLUwxmqJYtfcHaxhPthFg8CgRboJy6Qxbw0"
+        crossorigin="anonymous"></script>
+    <script src="../javaScript/main.js"></script>
+</body>
+
+</html>
